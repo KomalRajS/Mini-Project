@@ -1,0 +1,16 @@
+README.md
+setup.py
+src/LegalAI/__init__.py
+src/LegalAI.egg-info/PKG-INFO
+src/LegalAI.egg-info/SOURCES.txt
+src/LegalAI.egg-info/dependency_links.txt
+src/LegalAI.egg-info/top_level.txt
+src/LegalAI/components/__init__.py
+src/LegalAI/config/__init__.py
+src/LegalAI/config/configuration.py
+src/LegalAI/constants/__init__.py
+src/LegalAI/entity/__init__.py
+src/LegalAI/logging/__init__.py
+src/LegalAI/pipeline/__init__.py
+src/LegalAI/utils/__init__.py
+src/LegalAI/utils/common.py
