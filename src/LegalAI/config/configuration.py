@@ -1,6 +1,8 @@
 from LegalAI.constants import *
 from LegalAI.utils.common import read_yaml, create_directories, get_size
 from LegalAI.entity import DataIngetionConfig
+from LegalAI.entity import DataEmbeddingConfig
+
 from LegalAI.entity import DataValidationConfig
 from LegalAI.entity import DataTransformationConfig
 from LegalAI.entity import ModelTrainerConfig
@@ -27,7 +29,18 @@ class ConfigurationManager:
             local_data_file=config.local_data_file,
             unzip_dir=config.unzip_dir
         )
-        return data_ingetion_config    
+        return data_ingetion_config  
+      
+    def get_data_embedding_config(self)-> DataEmbeddingConfig:
+        
+        config=self.config.data_embedding
+        
+        
+        data_embedding_config=DataEmbeddingConfig(
+            index_name=config.index_name,
+            model_name=config.model_name,
+        )
+        return data_embedding_config    
     
     def get_data_validation_config(self)-> DataValidationConfig:
         

@@ -1,1 +1,18 @@
+llama-index 
+BeautifulSoup4 
+google-generativeai 
+pinecone-client
+
+llama-index-llms-gemini 
+llama-index-embeddings-gemini 
+llama-index-vector-stores-pinecone
+
+
+streamlit
+
+PyPDF2
+
+python-box
+ensure
+
 -e .

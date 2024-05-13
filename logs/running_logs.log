@@ -29,3 +29,475 @@ Expires: Sat, 11 May 2024 09:26:42 GMT
 Source-Age: 0
 
 ]
+[2024-05-13 23:06:54,404 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:06:54,427 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:06:54,428 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:06:54,429 : ERROR : pipeline : 'ConfigurationManager' object has no attribute 'get_data_embedding_config']
+Traceback (most recent call last):
+  File "D:\PythonProjects\Mini-project\pipeline.py", line 9, in <module>
+    data_embedding_pipeline.main()
+  File "D:\PythonProjects\Mini-project\src\LegalAI\pipeline\stage_02_data_embedding.py", line 12, in main
+    data_ingetion_config=config.get_data_embedding_config()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_embedding_config'
+[2024-05-13 23:08:25,941 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:08:25,944 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:08:25,945 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:08:25,946 : ERROR : pipeline : "'ConfigBox' object has no attribute 'root_dir'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PythonProjects\Mini-project\pipeline.py", line 9, in <module>
+    data_embedding_pipeline.main()
+  File "D:\PythonProjects\Mini-project\src\LegalAI\pipeline\stage_02_data_embedding.py", line 12, in main
+    data_ingetion_config=config.get_data_embedding_config()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\src\LegalAI\config\configuration.py", line 38, in get_data_embedding_config
+    create_directories([config.root_dir])
+                        ^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'"
+[2024-05-13 23:08:57,498 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:08:57,504 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:08:57,506 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:08:57,507 : ERROR : pipeline : "'ConfigBox' object has no attribute 'model_name'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PythonProjects\Mini-project\pipeline.py", line 9, in <module>
+    data_embedding_pipeline.main()
+  File "D:\PythonProjects\Mini-project\src\LegalAI\pipeline\stage_02_data_embedding.py", line 12, in main
+    data_ingetion_config=config.get_data_embedding_config()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\src\LegalAI\config\configuration.py", line 41, in get_data_embedding_config
+    model_name=config.model_name,
+               ^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_name'"
+[2024-05-13 23:09:18,323 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:09:18,326 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:09:18,327 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:09:18,328 : ERROR : pipeline : name 'data_embedding_config' is not defined]
+Traceback (most recent call last):
+  File "D:\PythonProjects\Mini-project\pipeline.py", line 9, in <module>
+    data_embedding_pipeline.main()
+  File "D:\PythonProjects\Mini-project\src\LegalAI\pipeline\stage_02_data_embedding.py", line 12, in main
+    data_ingetion_config=config.get_data_embedding_config()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\src\LegalAI\config\configuration.py", line 43, in get_data_embedding_config
+    return data_embedding_config
+       ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'data_embedding_config' is not defined
+[2024-05-13 23:09:41,980 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:09:41,983 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:09:41,983 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:09:41,983 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:09:42,028 : WARNING : _metadata : Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [WinError 10051] A socket operation was attempted to an unreachable network]
+[2024-05-13 23:09:42,054 : WARNING : _metadata : Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [WinError 10051] A socket operation was attempted to an unreachable network]
+[2024-05-13 23:09:42,055 : WARNING : _metadata : Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [WinError 10051] A socket operation was attempted to an unreachable network]
+[2024-05-13 23:09:42,055 : WARNING : _default : Authentication failed using Compute Engine authentication due to unavailable metadata server.]
+[2024-05-13 23:09:42,056 : ERROR : pipeline : Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.]
+Traceback (most recent call last):
+  File "D:\PythonProjects\Mini-project\pipeline.py", line 9, in <module>
+    data_embedding_pipeline.main()
+  File "D:\PythonProjects\Mini-project\src\LegalAI\pipeline\stage_02_data_embedding.py", line 13, in main
+    data_ingetion=DataEmbedder(data_ingetion_config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\src\LegalAI\components\data_embedding.py", line 21, in __init__
+    self.llm = Gemini()
+               ^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\llama_index\llms\gemini\base.py", line 120, in __init__
+    self._model_meta = genai.get_model(model_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\google\generativeai\models.py", line 54, in get_model
+    return get_base_model(name, client=client, request_options=request_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\google\generativeai\models.py", line 87, in get_base_model
+    client = get_default_model_client()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\google\generativeai\client.py", line 245, in get_default_model_client
+    return _client_manager.get_default_client("model")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\google\generativeai\client.py", line 161, in get_default_client
+    client = self.make_client(name)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\google\generativeai\client.py", line 121, in make_client
+    client = cls(**self.client_config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\model_service\client.py", line 450, in __init__
+    self._transport = Transport(
+                      ^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\model_service\transports\grpc.py", line 154, in __init__
+    super().__init__(
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\model_service\transports\base.py", line 101, in __init__
+    credentials, _ = google.auth.default(
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\google\auth\_default.py", line 691, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[2024-05-13 23:11:26,044 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:11:26,046 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:11:26,047 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:11:26,047 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:11:29,418 : ERROR : pipeline : name 'embed_model' is not defined]
+Traceback (most recent call last):
+  File "D:\PythonProjects\Mini-project\pipeline.py", line 9, in <module>
+    data_embedding_pipeline.main()
+  File "D:\PythonProjects\Mini-project\src\LegalAI\pipeline\stage_02_data_embedding.py", line 13, in main
+    data_ingetion=DataEmbedder(data_ingetion_config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\src\LegalAI\components\data_embedding.py", line 33, in __init__
+    Settings.embed_model = embed_model
+                           ^^^^^^^^^^^
+NameError: name 'embed_model' is not defined
+[2024-05-13 23:11:48,883 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:11:48,886 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:11:48,886 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:11:48,887 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:11:52,294 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:45:21,253 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:45:21,255 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:45:21,277 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:45:21,278 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:45:21,279 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:45:21,280 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:45:21,282 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:45:21,284 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:45:25,746 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:45:25,747 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:45:42,318 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:45:42,319 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:45:42,320 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:45:42,320 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:45:43,774 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:45:52,891 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:45:52,893 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:45:52,894 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:45:52,894 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:45:54,405 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:47:00,944 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:47:00,951 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:47:00,952 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:47:00,952 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:47:02,490 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:47:11,145 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:47:11,147 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:47:11,147 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:47:11,148 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:47:12,623 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:47:43,055 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:47:43,058 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:47:43,059 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:47:43,059 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:47:44,499 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:47:52,537 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:47:52,539 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:47:52,540 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:47:52,541 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:47:53,971 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:48:51,475 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:48:51,486 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:48:51,486 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:48:51,487 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:48:54,278 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:49:04,567 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:49:04,571 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:49:04,574 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:49:04,575 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:49:04,576 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:49:04,577 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:49:04,577 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:49:04,580 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:49:07,519 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:49:07,525 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:49:14,212 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:49:14,216 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:49:14,217 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:49:14,217 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:49:15,653 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:49:20,634 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:49:20,637 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:49:20,638 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:49:20,638 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:49:22,080 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:50:16,971 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:50:16,973 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:50:16,973 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:50:16,974 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:50:18,443 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:50:25,213 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:50:25,215 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:50:25,216 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:50:25,216 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:50:26,952 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:50:47,546 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:50:47,548 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:50:47,549 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:50:47,549 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:50:49,003 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:50:54,630 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:50:54,633 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:50:54,634 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:50:54,634 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:50:56,072 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:53:15,356 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:53:15,359 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:53:15,360 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:53:15,397 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:53:16,850 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:53:36,356 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:53:36,358 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:53:36,359 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:53:36,359 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:53:37,810 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:54:46,523 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:54:46,525 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:54:46,526 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:54:46,528 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:54:46,528 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:54:46,529 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:54:46,529 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:54:46,531 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:54:47,988 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:54:48,088 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:54:56,708 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:54:56,710 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:54:56,711 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:54:56,711 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:54:58,138 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:56:09,718 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:56:09,919 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:56:09,922 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:56:09,924 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:56:09,925 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:56:09,925 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:56:09,925 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:56:09,925 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:56:10,579 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:56:11,608 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:58:15,035 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:58:15,037 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:58:15,039 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:58:15,040 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:58:15,229 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:58:15,232 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:58:15,232 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:58:15,237 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:58:16,681 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:58:16,777 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:58:19,795 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:58:19,799 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:58:19,800 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:58:19,800 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:58:21,562 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-13 23:58:30,074 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-13 23:58:30,076 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-13 23:58:30,076 : INFO : common : created directory at: artifacts]
+[2024-05-13 23:58:30,077 : INFO : data_embedding : Loading embedding model]
+[2024-05-13 23:58:31,768 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:07:01,685 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:07:01,688 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:07:01,722 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:07:01,724 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:07:03,312 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:07:10,512 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:07:10,514 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:07:10,515 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:07:10,515 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:07:12,633 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:08:04,318 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:08:04,320 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:08:04,321 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:08:04,321 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:08:05,849 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:08:17,130 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:08:17,132 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:08:17,132 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:08:17,132 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:08:18,577 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:08:35,569 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:08:35,571 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:08:35,572 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:08:35,573 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:08:37,075 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:10:17,022 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:10:17,024 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:10:17,025 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:10:17,025 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:10:18,979 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:11:36,451 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:11:36,453 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:11:36,454 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:11:36,454 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:11:37,991 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:14:42,988 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:14:42,999 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:14:43,000 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:14:43,001 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:14:43,001 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:14:43,002 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:14:43,002 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:14:43,002 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:14:44,437 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:14:44,549 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:14:56,150 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:14:56,152 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:14:56,152 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:14:56,153 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:14:57,987 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:15:42,119 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:15:42,122 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:15:42,222 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:15:42,224 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:15:44,036 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:16:37,724 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:16:37,726 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:16:37,727 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:16:37,727 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:16:39,429 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:17:41,371 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:17:41,373 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:17:41,374 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:17:41,374 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:17:43,114 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:18:58,927 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:18:58,929 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:18:58,930 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:18:58,930 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:19:00,350 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:21:35,382 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:21:35,393 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:21:35,394 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:21:35,395 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:21:37,042 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:21:49,622 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:21:49,624 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:21:49,625 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:21:49,625 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:21:51,107 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:22:08,347 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:22:08,351 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:22:08,351 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:22:08,352 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:22:09,989 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:24:36,404 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:24:36,412 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:24:36,413 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:24:36,414 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:24:37,881 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:24:40,911 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:24:40,916 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:24:40,917 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:24:40,917 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:24:42,634 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:24:44,523 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:24:44,525 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:24:44,525 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:24:44,526 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:24:45,174 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:25:05,596 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:25:05,610 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:25:05,612 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:25:05,612 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:25:07,273 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:26:06,169 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:26:06,172 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:26:06,173 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:26:06,174 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:26:07,598 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:26:08,838 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:26:08,840 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:26:08,842 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:26:08,843 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:26:08,843 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:26:08,844 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:26:08,844 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:26:08,845 : INFO : data_embedding : Loading embedding model]

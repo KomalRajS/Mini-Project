@@ -6,11 +6,16 @@ src/LegalAI.egg-info/SOURCES.txt
 src/LegalAI.egg-info/dependency_links.txt
 src/LegalAI.egg-info/top_level.txt
 src/LegalAI/components/__init__.py
+src/LegalAI/components/data_embedding.py
+src/LegalAI/components/data_ingestion.py
+src/LegalAI/components/data_transformation.py
 src/LegalAI/config/__init__.py
 src/LegalAI/config/configuration.py
 src/LegalAI/constants/__init__.py
 src/LegalAI/entity/__init__.py
 src/LegalAI/logging/__init__.py
 src/LegalAI/pipeline/__init__.py
+src/LegalAI/pipeline/stage_01_data_ingestion.py
+src/LegalAI/pipeline/stage_02_data_embedding.py
 src/LegalAI/utils/__init__.py
 src/LegalAI/utils/common.py
