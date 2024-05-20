@@ -36,16 +36,11 @@ class DataEmbedder:
         logger.info('Successfully upserted data to Pinecone')
         
     def push(self,text):
-        documents = [Document(text=t) for t in text]
-        vector_store = PineconeVectorStore(pinecone_index=self.pinecone_index)
-        storage_context = StorageContext.from_defaults(
-            vector_store=vector_store
-        )
         
-        index = VectorStoreIndex.from_documents(
-            documents, 
-            storage_context=storage_context
-        )
+        vector_store = PineconeVectorStore(pinecone_index=self.pinecone_index)
+        
+        
+        
         
         index = VectorStoreIndex.from_vector_store(vector_store=vector_store)
         

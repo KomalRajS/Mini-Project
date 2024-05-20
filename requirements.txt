@@ -15,4 +15,14 @@ PyPDF2
 python-box
 ensure
 
+streamlit
+google-generativeai
+python-dotenv
+langchain
+PyPDF2
+chromadb
+faiss-cpu
+langchain_google_genai
+
+
 -e .

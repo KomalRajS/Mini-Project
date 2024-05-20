@@ -501,3 +501,154 @@ NameError: name 'embed_model' is not defined
 [2024-05-14 00:26:08,844 : INFO : common : created directory at: artifacts]
 [2024-05-14 00:26:08,844 : INFO : data_embedding : Loading embedding model]
 [2024-05-14 00:26:08,845 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:26:10,294 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:26:10,294 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:27:19,646 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:27:19,648 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:27:19,649 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:27:19,650 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:27:21,322 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:28:40,475 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:28:40,478 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:28:40,479 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:28:40,479 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:28:41,941 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-14 00:29:49,337 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-14 00:29:49,338 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-14 00:29:49,339 : INFO : common : created directory at: artifacts]
+[2024-05-14 00:29:49,340 : INFO : data_embedding : Loading embedding model]
+[2024-05-14 00:29:50,812 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 10:37:19,393 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 10:37:19,489 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 10:37:19,512 : INFO : common : created directory at: artifacts]
+[2024-05-17 10:37:19,513 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 10:37:24,670 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 10:37:49,248 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 10:37:49,252 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 10:37:49,254 : INFO : common : created directory at: artifacts]
+[2024-05-17 10:37:49,254 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 10:37:51,061 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 10:38:03,288 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 10:38:03,291 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 10:38:03,292 : INFO : common : created directory at: artifacts]
+[2024-05-17 10:38:03,293 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 10:38:05,402 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 11:37:34,838 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 11:37:34,886 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 11:37:34,906 : INFO : common : created directory at: artifacts]
+[2024-05-17 11:37:34,907 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 11:37:37,912 : ERROR : main : (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'x-pinecone-api-version': '2024-04', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'X-Cloud-Trace-Context': '98ff41b53d87b8c17344490c5d135358', 'Date': 'Fri, 17 May 2024 06:07:37 GMT', 'Server': 'Google Frontend', 'Content-Length': '83', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource legalai2 not found"},"status":404}
+]
+Traceback (most recent call last):
+  File "D:\PythonProjects\Mini-project\main.py", line 14, in <module>
+    data_embedding_pipeline.main()
+  File "D:\PythonProjects\Mini-project\src\LegalAI\pipeline\stage_02_data_embedding.py", line 13, in main
+    self.data_embedding=DataEmbedder(self.data_embedding_config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\src\LegalAI\components\data_embedding.py", line 31, in __init__
+    self.pinecone_index = self.pinecone_client.Index(self.config.index_name)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\control\pinecone.py", line 631, in Index
+    index_host = self.index_host_store.get_host(self.index_api, self.config, name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\control\index_host_store.py", line 42, in get_host
+    description = api.describe_index(index_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\core\client\api_client.py", line 772, in __call__
+    return self.callable(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\core\client\api\manage_indexes_api.py", line 869, in __describe_index
+    return self.call_with_http_info(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\core\client\api_client.py", line 834, in call_with_http_info
+    return self.api_client.call_api(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\core\client\api_client.py", line 409, in call_api
+    return self.__call_api(resource_path, method,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\core\client\api_client.py", line 203, in __call_api
+    raise e
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\core\client\api_client.py", line 196, in __call_api
+    response_data = self.request(
+                    ^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\core\client\api_client.py", line 435, in request
+    return self.rest_client.GET(url,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\core\client\rest.py", line 267, in GET
+    return self.request("GET", url,
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjects\Mini-project\venv\Lib\site-packages\pinecone\core\client\rest.py", line 256, in request
+    raise NotFoundException(http_resp=r)
+pinecone.core.client.exceptions.NotFoundException: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'x-pinecone-api-version': '2024-04', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'X-Cloud-Trace-Context': '98ff41b53d87b8c17344490c5d135358', 'Date': 'Fri, 17 May 2024 06:07:37 GMT', 'Server': 'Google Frontend', 'Content-Length': '83', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource legalai2 not found"},"status":404}
+
+[2024-05-17 11:39:09,768 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 11:39:09,772 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 11:39:09,773 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 11:39:09,775 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 11:39:09,776 : INFO : common : created directory at: artifacts]
+[2024-05-17 11:39:09,776 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 11:39:09,776 : INFO : common : created directory at: artifacts]
+[2024-05-17 11:39:09,777 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 11:39:14,697 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 11:39:14,699 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 11:39:49,775 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 11:39:49,780 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 11:39:49,781 : INFO : common : created directory at: artifacts]
+[2024-05-17 11:39:49,782 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 11:39:51,370 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 11:40:11,716 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 11:40:11,718 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 11:40:11,719 : INFO : common : created directory at: artifacts]
+[2024-05-17 11:40:11,720 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 11:40:13,427 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 11:59:05,039 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 11:59:05,070 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 11:59:05,082 : INFO : common : created directory at: artifacts]
+[2024-05-17 11:59:05,083 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 11:59:07,657 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 11:59:15,532 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 11:59:15,535 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 11:59:15,546 : INFO : common : created directory at: artifacts]
+[2024-05-17 11:59:15,546 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 11:59:17,007 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 11:59:29,887 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 11:59:29,889 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 11:59:29,890 : INFO : common : created directory at: artifacts]
+[2024-05-17 11:59:29,890 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 11:59:31,367 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 11:59:38,261 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 11:59:38,263 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 11:59:38,264 : INFO : common : created directory at: artifacts]
+[2024-05-17 11:59:38,265 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 11:59:39,718 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 12:00:52,039 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 12:00:52,043 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 12:00:52,044 : INFO : common : created directory at: artifacts]
+[2024-05-17 12:00:52,044 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 12:00:53,469 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 12:00:57,167 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 12:00:57,170 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 12:00:57,171 : INFO : common : created directory at: artifacts]
+[2024-05-17 12:00:57,172 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 12:00:57,698 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 12:01:27,462 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 12:01:27,464 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 12:01:27,465 : INFO : common : created directory at: artifacts]
+[2024-05-17 12:01:27,465 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 12:01:28,942 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 12:01:36,837 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 12:01:36,839 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 12:01:36,840 : INFO : common : created directory at: artifacts]
+[2024-05-17 12:01:36,840 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 12:01:38,280 : INFO : data_embedding : Successfully upserted data to Pinecone]
+[2024-05-17 12:01:59,523 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2024-05-17 12:01:59,526 : INFO : common : yaml file: params.yaml loaded successfully]
+[2024-05-17 12:01:59,527 : INFO : common : created directory at: artifacts]
+[2024-05-17 12:01:59,528 : INFO : data_embedding : Loading embedding model]
+[2024-05-17 12:02:00,963 : INFO : data_embedding : Successfully upserted data to Pinecone]
