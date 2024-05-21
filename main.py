@@ -11,6 +11,15 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 
+st.set_page_config(page_title="Chat PDF", layout="wide")
+if "openai_model" not in st.session_state:
+    st.session_state["openai_model"] = "gpt-3.5-turbo"
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
 # Load environment variables
 load_dotenv()
 os.getenv("GOOGLE_API_KEY")
@@ -36,8 +45,10 @@ def get_vector_store(text_chunks):
 
 def get_conversational_chain():
     prompt_template = """
-    Answer the question as detailed as possible from the provided context, make sure to provide all the details, atleast give some kind of information \n\n
     Context:\n {context}?\n
+    Given context is about Indian constitution .
+    Answer the question in highly descriptive way , make sure to provide all the details, atleast give some kind of information \n\n
+    
     Question: \n{question}\n
     Answer:
     """
@@ -53,41 +64,30 @@ def user_input(user_question):
     new_db = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
     
     docs = new_db.similarity_search(user_question,k=6)
-
+    print(docs)
     chain = get_conversational_chain()
     response = chain({"input_documents": docs, "question": user_question}, return_only_outputs=True)
     st.write("Reply: ", response["output_text"])
     return response["output_text"]
 
-def main():
-    st.set_page_config(page_title="Chat PDF", layout="wide")
-    st.header("Chat with TelidermAI to get Your Doubts Cleared💁")
 
-    
-    conversation_history = []
-
-    user_question = st.text_input("Ask a Question related to the diseases")
-
-    if user_question:
+conversation_history = []
+if prompt := st.chat_input("What is up?"):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
         
-        response = user_input(user_question)
-        conversation_history.append(("User:", user_question))
-        conversation_history.append(("LegalAI:", response))
+    with st.chat_message("assistant"):
+        stream = user_input(prompt)
+        response = st.write(stream)
+        st.session_state.messages.append({"role": "assistant", "content": response})
 
-    
-    st.subheader("Conversation History")
-    for role, text in conversation_history:
-        st.write(f"{role} {text}")
-
-    with st.sidebar:
-        st.title("Menu:")
-        pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
-        if pdf_docs and st.button("Submit & Process"):
-            with st.spinner("Creating Embeddings..."):
-                raw_text = get_pdf_text(pdf_docs)
-                text_chunks = get_text_chunks(raw_text)
-                get_vector_store(text_chunks)
-                st.success("Done")
-
-if __name__ == "__main__":
-    main()
+with st.sidebar:
+    st.title("Menu:")
+    pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
+    if pdf_docs and st.button("Submit & Process"):
+        with st.spinner("Creating Embeddings..."):
+            raw_text = get_pdf_text(pdf_docs)
+            text_chunks = get_text_chunks(raw_text)
+            get_vector_store(text_chunks)
+            st.success("Done")
